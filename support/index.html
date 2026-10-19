@@ -1,75 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VIET PLUS – Support</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f5f5f7;
-      color: #1d1d1f;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 48px 20px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 18px;
-      max-width: 560px;
-      width: 100%;
-      padding: 40px 36px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    }
-    .logo { font-size: 28px; font-weight: 700; color: #e03a3a; margin-bottom: 6px; }
-    .tagline { font-size: 14px; color: #6e6e73; margin-bottom: 32px; }
-    h1 { font-size: 22px; font-weight: 600; margin-bottom: 10px; }
-    p { font-size: 15px; color: #3a3a3c; line-height: 1.7; margin-bottom: 28px; }
-    .contact-item {
-      display: flex; align-items: center; gap: 14px;
-      background: #f5f5f7; border-radius: 12px; padding: 16px 20px;
-      margin-bottom: 14px; text-decoration: none; color: inherit;
-    }
-    .icon { font-size: 22px; width: 36px; text-align: center; }
-    .contact-label { font-size: 12px; color: #6e6e73; margin-bottom: 2px; }
-    .contact-value { font-size: 15px; font-weight: 500; }
-    .divider { border: none; border-top: 1px solid #e5e5ea; margin: 28px 0; }
-    .hours-title { font-size: 13px; font-weight: 600; text-transform: uppercase; color: #6e6e73; margin-bottom: 10px; }
-    .hours-row { display: flex; justify-content: space-between; font-size: 14px; padding: 6px 0; border-bottom: 1px solid #f0f0f5; }
-    footer { margin-top: 28px; font-size: 13px; color: #aeaeb2; text-align: center; }
-  </style>
+  <title>Trung tâm hỗ trợ khách hàng (Support Center) – Viet Plus</title>
+  <meta name="description" content="Trung tâm hỗ trợ khách hàng Viet Plus. Kênh liên hệ qua Hotline, Zalo, KakaoTalk, Email và giờ làm việc KST." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
-  <div class="card">
-    <div class="logo">VIET PLUS</div>
-    <div class="tagline">Community App for Vietnamese in Korea</div>
-    <h1>Support Center</h1>
-    <p>If you have any questions, feedback, or issues with the VIET PLUS app, please don't hesitate to contact us. We're here to help!</p>
-    <a class="contact-item" href="mailto:ken.master.tto@gmail.com">
-      <span class="icon">✉️</span>
-      <div>
-        <div class="contact-label">Email Support</div>
-        <div class="contact-value">ken.master.tto@gmail.com</div>
-      </div>
-    </a>
-    <a class="contact-item" href="tel:+821082788511">
-      <span class="icon">📞</span>
-      <div>
-        <div class="contact-label">Phone / Zalo / KakaoTalk</div>
-        <div class="contact-value">+82 10-8278-8511</div>
-      </div>
-    </a>
-    <hr class="divider" />
-    <div class="hours-title">Support Hours (KST)</div>
-    <div class="hours-row"><span>Monday – Friday</span><span>9:00 AM – 6:00 PM</span></div>
-    <div class="hours-row"><span>Saturday</span><span>10:00 AM – 2:00 PM</span></div>
-    <div class="hours-row"><span>Sunday & Public Holidays</span><span>Closed</span></div>
-    <hr class="divider" />
-    <p style="margin-bottom:0; font-size:14px; color:#6e6e73;">We aim to respond to all inquiries within <strong>24 hours</strong>. For urgent issues, please contact us via phone or Zalo.</p>
+
+  <!-- Reading Progress -->
+  <div class="reading-progress-container">
+    <div class="reading-progress-bar"></div>
   </div>
-  <footer>© 2026 VIET PLUS. All rights reserved.</footer>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo">
+        <span class="logo-badge">VP</span>
+        <span>VIET PLUS</span>
+        <span class="brand-kr">비엣플러스</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="../" class="nav-link">Trang chủ</a>
+        <a href="../business-info/" class="nav-link">사업자 정보</a>
+        <a href="../terms/" class="nav-link">이용약관</a>
+        <a href="../privacy-policy/" class="nav-link">개인정보처리방침</a>
+        <a href="../shipping-policy/" class="nav-link">배송정책</a>
+        <a href="../refund-policy/" class="nav-link">교환·환불정책</a>
+        <a href="../support/" class="nav-cta-btn active">고객센터</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <a href="../" class="nav-link">Trang chủ (Home)</a>
+    <a href="../business-info/" class="nav-link">1. 사업자 정보 (Thông tin doanh nghiệp)</a>
+    <a href="../terms/" class="nav-link">2. 이용약관 (Điều khoản sử dụng)</a>
+    <a href="../privacy-policy/" class="nav-link">3. 개인정보 처리방침 (Chính sách bảo mật)</a>
+    <a href="../shipping-policy/" class="nav-link">4. 배송정책 (Chính sách giao hàng)</a>
+    <a href="../refund-policy/" class="nav-link">5. 교환·환불정책 (Chính sách đổi trả)</a>
+    <a href="../support/" class="nav-link active">Trung tâm hỗ trợ (Support)</a>
+    <a href="../delete-account/" class="nav-link">Yêu cầu xóa tài khoản (Delete Account)</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="policy-hero">
+    <div class="policy-hero-inner">
+      <div class="breadcrumbs">
+        <a href="../">홈 (Home)</a>
+        <span class="separator">/</span>
+        <span>Support Center</span>
+      </div>
+      <h1 class="policy-main-title">
+        Support Center – Trung Tâm Hỗ Trợ
+      </h1>
+      <p class="policy-subtitle-vn">Community App for Vietnamese in Korea • Giải đáp thắc mắc & Chăm sóc khách hàng</p>
+      <div class="policy-meta-strip">
+        <span class="meta-pill effective-date">Phản hồi trong vòng 24 giờ</span>
+        <span class="meta-pill">Hotline: +82 10-8278-8511</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="policy-page-container" style="grid-template-columns: 1fr; max-width: 760px;">
+    <div class="policy-articles-stream">
+      <article class="policy-article-card">
+        <div class="article-header">
+          <span class="article-number">CSKH</span>
+          <h2 class="article-title-kr">Liên hệ với đội ngũ hỗ trợ VIET PLUS</h2>
+        </div>
+        <div class="article-body">
+          <p>If you have any questions, feedback, or issues with the VIET PLUS app, please don't hesitate to contact us. We're here to help!</p>
+          
+          <table class="business-info-table">
+            <tbody>
+              <tr>
+                <th>Email Support</th>
+                <td>
+                  <a href="mailto:ken.master.tto@gmail.com" style="color: var(--blue-700); font-weight: 600;">ken.master.tto@gmail.com</a>
+                  <button class="copy-badge" data-copy="ken.master.tto@gmail.com">Sao chép</button>
+                </td>
+              </tr>
+              <tr>
+                <th>Phone / Zalo / KakaoTalk</th>
+                <td>
+                  <a href="tel:+821082788511" style="color: var(--blue-700); font-weight: 700;">+82 10-8278-8511 (010-8278-8511)</a>
+                  <button class="copy-badge" data-copy="+821082788511">Sao chép</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="notice-callout gold">
+            <div class="notice-callout-title">🕒 Support Hours (Giờ làm việc theo giờ Hàn Quốc KST):</div>
+            <p><strong>Monday – Friday:</strong> 9:00 AM – 6:00 PM</p>
+            <p><strong>Saturday:</strong> 10:00 AM – 2:00 PM</p>
+            <p><strong>Sunday & Public Holidays:</strong> Closed (Nghỉ)</p>
+          </div>
+
+          <p style="color: var(--text-muted); font-size: 0.92rem; margin-top: 1rem;">
+            We aim to respond to all inquiries within <strong>24 hours</strong>. For urgent issues, please contact us via phone or Zalo.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-company-info">
+          <h4>VIET PLUS (비엣플러스)</h4>
+          <p><strong>상호:</strong> VIETPLUS | <strong>대표자:</strong> NGUYEN BA TUNG</p>
+          <p><strong>사업자등록번호:</strong> 292-06-03928 | <strong>통신판매업:</strong> 2026-광주광산-0777</p>
+          <p><strong>사업장 주소:</strong> 전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)</p>
+          <p><strong>고객센터:</strong> 010-8278-8511 | <strong>이메일:</strong> ken.master.tto@gmail.com</p>
+        </div>
+        <div class="footer-col">
+          <h4>Văn Bản Chính Sách</h4>
+          <ul>
+            <li><a href="../business-info/">1. 사업자 정보 (Thông tin DN)</a></li>
+            <li><a href="../terms/">2. 이용약관 (Điều khoản)</a></li>
+            <li><a href="../privacy-policy/">3. 개인정보 처리방침 (Bảo mật)</a></li>
+            <li><a href="../shipping-policy/">4. 배송정책 (Giao hàng)</a></li>
+            <li><a href="../refund-policy/">5. 교환·환불정책 (Đổi trả)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="../support/">Trung tâm hỗ trợ</a></li>
+            <li><a href="../delete-account/">Xóa tài khoản</a></li>
+            <li><a href="mailto:ken.master.tto@gmail.com">Gửi yêu cầu</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 VIET PLUS. All rights reserved. Registered in South Korea.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

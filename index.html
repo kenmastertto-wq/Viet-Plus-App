@@ -3,139 +3,263 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VIET PLUS - Tiện ích cuộc sống người Việt tại Hàn Quốc</title>
-  <meta name="description" content="VIET PLUS - Ứng dụng di động cung cấp các dịch vụ tiện ích, hỗ trợ cuộc sống toàn diện cho cộng đồng người Việt Nam tại Hàn Quốc." />
+  <title>VIET PLUS - Tiện ích cuộc sống người Việt tại Hàn Quốc | Cổng Chính Sách & Pháp Lý</title>
+  <meta name="description" content="VIET PLUS - Ứng dụng di động cung cấp các dịch vụ tiện ích, hỗ trợ cuộc sống toàn diện cho cộng đồng người Việt Nam tại Hàn Quốc. Cổng thông tin chính sách, điều khoản và đăng ký kinh doanh chính thức." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #0284c7;
-      --primary-dark: #0369a1;
-      --accent: #f59e0b;
-      --dark: #0f172a;
-      --light: #f8fafc;
-      --gray: #64748b;
-      --border: #e2e8f0;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
-    body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
-    
-    header { background: #fff; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 50; }
-    .nav-container { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
-    .nav-links { display: flex; gap: 1.5rem; }
-    .nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--primary); }
-
-    .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; padding: 5rem 1.5rem; text-align: center; }
-    .hero-container { max-width: 900px; margin: 0 auto; }
-    .hero h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1.25rem; line-height: 1.2; }
-    .hero h1 span { color: #38bdf8; }
-    .hero p { font-size: 1.15rem; color: #cbd5e1; margin-bottom: 2rem; }
-    .badges { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-    .badge { background: rgba(255,255,255,0.1); padding: 0.75rem 1.5rem; border-radius: 9999px; font-weight: 600; border: 1px solid rgba(255,255,255,0.2); }
-
-    .features { padding: 5rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-    .section-title { text-align: center; margin-bottom: 3.5rem; }
-    .section-title h2 { font-size: 2rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; }
-    .section-title p { color: var(--gray); font-size: 1.05rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-    .card { background: #fff; padding: 2.25rem; border-radius: 1rem; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-    .card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--dark); }
-    .card p { color: var(--gray); font-size: 0.95rem; }
-
-    footer { background: #0b1120; color: #94a3b8; padding: 4rem 1.5rem 2rem; border-top: 1px solid #1e293b; }
-    .footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; margin-bottom: 3rem; }
-    .company-info h4 { color: #fff; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700; }
-    .company-info p { font-size: 0.9rem; margin-bottom: 0.4rem; }
-    .footer-links h4 { color: #fff; font-size: 1.1rem; margin-bottom: 1rem; font-weight: 600; }
-    .footer-links ul { list-style: none; }
-    .footer-links li { margin-bottom: 0.5rem; }
-    .footer-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; }
-    .footer-links a:hover { color: #fff; }
-    .copyright { text-align: center; padding-top: 2rem; border-top: 1px solid #1e293b; font-size: 0.85rem; }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2rem; }
-      .footer-container { grid-template-columns: 1fr; gap: 2rem; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <div class="nav-container">
-      <a href="/" class="logo">🇻🇳 VIET PLUS</a>
-      <div class="nav-links">
-        <a href="#services">Dịch vụ</a>
-        <a href="#about">Về chúng tôi</a>
-        <a href="#contact">Liên hệ</a>
-      </div>
+  <!-- Reading Progress -->
+  <div class="reading-progress-container">
+    <div class="reading-progress-bar"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" class="brand-logo">
+        <span class="logo-badge">🇻🇳</span>
+        <span>VIET PLUS</span>
+        <span class="brand-kr">비엣플러스</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#policies" class="nav-link active">Chính sách & Pháp lý</a>
+        <a href="#services" class="nav-link">Dịch vụ</a>
+        <a href="#about" class="nav-link">Về chúng tôi</a>
+        <a href="#contact" class="nav-link">Liên hệ</a>
+        <a href="support/" class="nav-cta-btn">Trung tâm CSKH</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-container">
-      <h1>Hệ sinh thái tiện ích toàn diện cho <span>Người Việt tại Hàn Quốc</span></h1>
-      <p>VIET PLUS cung cấp giải pháp công nghệ hiện đại, kết nối cộng đồng, hỗ trợ đời sống, việc làm, thủ tục và dịch vụ thiết yếu một cách thuận tiện và an toàn.</p>
-      <div class="badges">
-        <div class="badge">🚀 Ứng dụng di động iOS & Android</div>
-        <div class="badge">🛡️ An toàn & Đáng tin cậy</div>
-        <div class="badge">⚡ Hỗ trợ 24/7</div>
-      </div>
-    </div>
-  </section>
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <a href="#policies" class="nav-link active">📜 Cổng chính sách & Pháp lý</a>
+    <a href="business-info/" class="nav-link">1. 사업자 정보 (Thông tin doanh nghiệp)</a>
+    <a href="terms/" class="nav-link">2. 이용약관 (Điều khoản sử dụng)</a>
+    <a href="privacy-policy/" class="nav-link">3. 개인정보 처리방침 (Chính sách bảo mật)</a>
+    <a href="shipping-policy/" class="nav-link">4. 배송정책 (Chính sách giao hàng)</a>
+    <a href="refund-policy/" class="nav-link">5. 교환·환불정책 (Chính sách đổi trả)</a>
+    <a href="#services" class="nav-link">Dịch vụ nổi bật</a>
+    <a href="#about" class="nav-link">Về chúng tôi</a>
+    <a href="#contact" class="nav-link">Thông tin liên hệ</a>
+    <a href="support/" class="nav-link">Trung tâm hỗ trợ (Support)</a>
+    <a href="delete-account/" class="nav-link">Yêu cầu xóa tài khoản</a>
+  </div>
 
-  <!-- Services / Features -->
-  <section class="features" id="services">
-    <div class="section-title">
-      <h2>Dịch vụ & Tính năng nổi bật</h2>
-      <p>Các giải pháp công nghệ hướng tới sự thuận tiện tối đa cho người dùng</p>
-    </div>
-    <div class="grid">
-      <div class="card">
-        <h3>🏠 Tìm kiếm & Đặt dịch vụ</h3>
-        <p>Kết nối nhanh chóng với các nhà cung cấp dịch vụ đời sống, nhà ở, vận chuyển và tiện ích sinh hoạt uy tín tại Hàn Quốc.</p>
+  <main>
+    <!-- Hero Section (Bảo lưu nguyên vẹn nội dung cũ, nâng cấp diện mạo Luxury) -->
+    <section class="hero-portal" id="about">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span>✨</span>
+          <span>Dịch vụ tiện ích & Cổng pháp lý chính thức tại Hàn Quốc</span>
+        </div>
+        <h1 class="hero-title">
+          Hệ sinh thái tiện ích toàn diện cho <span class="accent">Người Việt tại Hàn Quốc</span>
+        </h1>
+        <p class="hero-desc">
+          VIET PLUS cung cấp giải pháp công nghệ hiện đại, kết nối cộng đồng, hỗ trợ đời sống, việc làm, thủ tục và dịch vụ thiết yếu một cách thuận tiện và an toàn.
+        </p>
+        <div class="hero-badges-wrapper">
+          <div class="hero-badge-tag">🚀 Ứng dụng di động iOS & Android</div>
+          <div class="hero-badge-tag">🛡️ An toàn & Đáng tin cậy</div>
+          <div class="hero-badge-tag">⚡ Hỗ trợ 24/7</div>
+        </div>
       </div>
-      <div class="card">
-        <h3>💬 Kết nối cộng đồng</h3>
-        <p>Không gian giao lưu, chia sẻ kinh nghiệm sống, làm việc, học tập và cập nhật thông tin pháp luật mới nhất tại Hàn Quốc.</p>
-      </div>
-      <div class="card">
-        <h3>🔒 Tài khoản & Bảo mật cao</h3>
-        <p>Hệ thống bảo vệ dữ liệu người dùng theo chuẩn bảo mật hiện đại, quản lý tài khoản minh bạch và bảo mật đa tầng.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer with Full Legal Korean Business Info -->
-  <footer id="contact">
-    <div class="footer-container">
-      <div class="company-info">
-        <h4>VIET PLUS (비엣플러스)</h4>
-        <p><strong>Đại diện pháp luật (CEO):</strong> NGUYEN BA TUNG (응우옌바퉁)</p>
-        <p><strong>Mã số đăng ký kinh doanh (사업자등록번호):</strong> 292-06-03928</p>
-        <p><strong>Địa chỉ trụ sở (Headquarters):</strong> 82-2, Jingoksandan 2beon-ro, Room 402, Gwangsan-gu, Gwangju, 62465, South Korea</p>
-        <p><strong>Email hỗ trợ:</strong> admin@vietpluskr.com</p>
-        <p><strong>Hotline:</strong> +82 10-8278-8511</p>
+    <!-- 5 VĂN BẢN CHÍNH SÁCH CHÍNH THỨC (POLICIES HUB) -->
+    <section class="section-wrapper" id="policies">
+      <div class="section-header">
+        <span class="section-label">Legal & Policy Center</span>
+        <h2 class="section-title">Trung Tâm Chính Sách & Điều Khoản</h2>
+        <p class="section-desc">
+          Các văn bản pháp lý, chính sách mua sắm trực tuyến và bảo vệ quyền lợi người tiêu dùng theo quy định của pháp luật Hàn Quốc (전자상거래법).
+        </p>
       </div>
-      <div class="footer-links">
-        <h4>Chính sách & Hỗ trợ</h4>
-        <ul>
-          <li><a href="/delete-account">Yêu cầu xoá tài khoản (Delete Account)</a></li>
-          <li><a href="#">Điều khoản sử dụng (Terms of Service)</a></li>
-          <li><a href="#">Chính sách bảo mật (Privacy Policy)</a></li>
-          <li><a href="mailto:admin@vietpluskr.com">Hỗ trợ khách hàng</a></li>
-        </ul>
+
+      <div class="policies-grid-5">
+        
+        <!-- Card 1: Business Info -->
+        <div class="policy-card">
+          <div class="policy-card-icon">🏛️</div>
+          <h3 class="policy-card-kr">사업자 정보</h3>
+          <div class="policy-card-vn">Thông tin doanh nghiệp & Chủ thể kinh doanh</div>
+          <p class="policy-card-desc">
+            Thông tin đăng ký kinh doanh chính thức, mã số thuế (292-06-03928), số phép TMĐT (2026-광주광산-0777), đại diện pháp luật NGUYEN BA TUNG và trụ sở công ty.
+          </p>
+          <div class="policy-card-footer">
+            <span class="policy-card-articles">4 Mục công khai</span>
+            <a href="business-info/" class="policy-card-link">
+              Xem văn bản <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Terms of Service -->
+        <div class="policy-card">
+          <div class="policy-card-icon">📜</div>
+          <h3 class="policy-card-kr">이용약관</h3>
+          <div class="policy-card-vn">Điều khoản và điều kiện sử dụng</div>
+          <p class="policy-card-desc">
+            Quy định chung về quyền lợi, nghĩa vụ của khách hàng và nền tảng Viet Plus trong các hoạt động tra cứu, đặt hàng, thanh toán và sử dụng dịch vụ.
+          </p>
+          <div class="policy-card-footer">
+            <span class="policy-card-articles">12 Điều khoản</span>
+            <a href="terms/" class="policy-card-link">
+              Xem văn bản <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Privacy Policy -->
+        <div class="policy-card">
+          <div class="policy-card-icon">🔒</div>
+          <h3 class="policy-card-kr">개인정보 처리방침</h3>
+          <div class="policy-card-vn">Chính sách bảo mật quyền riêng tư</div>
+          <p class="policy-card-desc">
+            Cam kết bảo vệ dữ liệu cá nhân theo luật Hàn Quốc, các mục đích thu thập, thời hạn lưu trữ và liên kết thanh toán an toàn qua Toss Payments.
+          </p>
+          <div class="policy-card-footer">
+            <span class="policy-card-articles">12 Điều khoản</span>
+            <a href="privacy-policy/" class="policy-card-link">
+              Xem văn bản <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Shipping Policy -->
+        <div class="policy-card">
+          <div class="policy-card-icon">🚚</div>
+          <h3 class="policy-card-kr">배송정책</h3>
+          <div class="policy-card-vn">Chính sách giao nhận & Vận chuyển</div>
+          <p class="policy-card-desc">
+            Phạm vi giao hàng toàn quốc tại Hàn Quốc, 6 trạng thái xử lý đơn hàng, cam kết không thu phí ẩn và quy định chuyển phát đến đảo/vùng núi.
+          </p>
+          <div class="policy-card-footer">
+            <span class="policy-card-articles">9 Điều khoản</span>
+            <a href="shipping-policy/" class="policy-card-link">
+              Xem văn bản <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5: Refund Policy -->
+        <div class="policy-card">
+          <div class="policy-card-icon">🔄</div>
+          <h3 class="policy-card-kr">교환·반품 및 환불정책</h3>
+          <div class="policy-card-vn">Chính sách đổi trả & Hoàn tiền</div>
+          <p class="policy-card-desc">
+            Thời hạn hoàn trả 7 ngày khi đổi ý, 3 tháng khi hàng lỗi, quy trình hoàn tiền trong 3 ngày làm việc và chính sách xử lý thực phẩm an toàn.
+          </p>
+          <div class="policy-card-footer">
+            <span class="policy-card-articles">10 Điều khoản</span>
+            <a href="refund-policy/" class="policy-card-link">
+              Xem văn bản <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6: Support Center -->
+        <div class="policy-card" style="background: linear-gradient(135deg, #0b1120 0%, #1e293b 100%); color: #fff;">
+          <div class="policy-card-icon" style="background: rgba(255,255,255,0.1); color: var(--gold-400);">🎧</div>
+          <h3 class="policy-card-kr" style="color: #fff;">고객센터 및 지원</h3>
+          <div class="policy-card-vn" style="color: #38bdf8;">Trung tâm hỗ trợ khách hàng</div>
+          <p class="policy-card-desc" style="color: #cbd5e1;">
+            Hotline: 010-8278-8511 | Giờ làm việc: 09:00 - 18:00 (Thứ 2 đến Thứ 6). Hướng dẫn thủ tục khiếu nại, đổi trả và yêu cầu xóa tài khoản người dùng.
+          </p>
+          <div class="policy-card-footer" style="border-top-color: rgba(255,255,255,0.12);">
+            <span class="policy-card-articles" style="color: #94a3b8;">Hỗ trợ 24/7</span>
+            <a href="support/" class="policy-card-link" style="color: #fff;">
+              Liên hệ ngay <span>→</span>
+            </a>
+          </div>
+        </div>
+
       </div>
-    </div>
-    <div class="copyright">
-      <p>© 2026 VIET PLUS. All rights reserved. Registered in South Korea.</p>
+    </section>
+
+    <!-- Services / Features (Bảo lưu 100% nội dung nguyên bản cũ của bạn) -->
+    <section class="section-wrapper services-section" id="services">
+      <div class="section-header">
+        <span class="section-label">Core Features</span>
+        <h2 class="section-title">Dịch vụ & Tính năng nổi bật</h2>
+        <p class="section-desc">Các giải pháp công nghệ hướng tới sự thuận tiện tối đa cho người dùng</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>🏠 Tìm kiếm & Đặt dịch vụ</h3>
+          <p>Kết nối nhanh chóng với các nhà cung cấp dịch vụ đời sống, nhà ở, vận chuyển và tiện ích sinh hoạt uy tín tại Hàn Quốc.</p>
+        </div>
+        <div class="service-card">
+          <h3>💬 Kết nối cộng đồng</h3>
+          <p>Không gian giao lưu, chia sẻ kinh nghiệm sống, làm việc, học tập và cập nhật thông tin pháp luật mới nhất tại Hàn Quốc.</p>
+        </div>
+        <div class="service-card">
+          <h3>🔒 Tài khoản & Bảo mật cao</h3>
+          <p>Hệ thống bảo vệ dữ liệu người dùng theo chuẩn bảo mật hiện đại, quản lý tài khoản minh bạch và bảo mật đa tầng.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with Full Legal Korean Business Info (Bảo lưu thông tin cũ và hoàn thiện chuẩn TMĐT Hàn Quốc) -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-company-info">
+          <h4>VIET PLUS (비엣플러스)</h4>
+          <p><strong>Đại diện pháp luật (CEO / 대표자):</strong> NGUYEN BA TUNG (응우옌바퉁)</p>
+          <p><strong>Mã số đăng ký kinh doanh (사업자등록번호):</strong> 292-06-03928</p>
+          <p><strong>Giấy phép kinh doanh TMĐT (통신판매업 신고번호):</strong> 2026-광주광산-0777</p>
+          <p><strong>Địa chỉ trụ sở (Headquarters):</strong> 82-2, Jingoksandan 2beon-ro, Room 402, Gwangsan-gu, Gwangju, 62465, South Korea (전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동))</p>
+          <p><strong>Email hỗ trợ:</strong> <a href="mailto:ken.master.tto@gmail.com" style="color: #38bdf8;">ken.master.tto@gmail.com</a> / <a href="mailto:admin@vietpluskr.com" style="color: #38bdf8;">admin@vietpluskr.com</a></p>
+          <p><strong>Hotline:</strong> <a href="tel:01082788511" style="color: #38bdf8;">+82 10-8278-8511 (010-8278-8511)</a></p>
+          <p><strong>Kênh mạng xã hội:</strong> <a href="https://www.facebook.com/share/1GPCzWbifK/?mibextid=wwXIfr" target="_blank" rel="noopener" style="color: #38bdf8; margin-right: 12px;">Facebook</a> <a href="https://www.tiktok.com/@vietplus.kr?_r=1&_t=ZS-9Ad3i88E2Z2" target="_blank" rel="noopener" style="color: #38bdf8;">TikTok</a></p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Văn Bản Chính Sách</h4>
+          <ul>
+            <li><a href="business-info/">1. 사업자 정보 (Thông tin DN)</a></li>
+            <li><a href="terms/">2. 이용약관 (Điều khoản sử dụng)</a></li>
+            <li><a href="privacy-policy/">3. 개인정보 처리방침 (Bảo mật)</a></li>
+            <li><a href="shipping-policy/">4. 배송정책 (Chính sách giao hàng)</a></li>
+            <li><a href="refund-policy/">5. 교환·환불정책 (Đổi trả hoàn tiền)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Chính sách & Hỗ trợ</h4>
+          <ul>
+            <li><a href="delete-account/">Yêu cầu xoá tài khoản (Delete Account)</a></li>
+            <li><a href="support/">Trung tâm hỗ trợ khách hàng (Support)</a></li>
+            <li><a href="terms/">Điều khoản dịch vụ (Terms)</a></li>
+            <li><a href="privacy-policy/">Chính sách quyền riêng tư (Privacy)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 VIET PLUS. All rights reserved. Registered in South Korea.</p>
+        <p>Hệ sinh thái tiện ích số toàn diện cho người Việt Nam tại Hàn Quốc.</p>
+      </div>
     </div>
   </footer>
 
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

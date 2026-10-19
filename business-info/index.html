@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>사업자 정보 (Thông tin doanh nghiệp) - Viet Plus</title>
+  <meta name="description" content="Viet Plus 온라인 쇼핑몰 사업자 정보, 통신판매업 신고번호, 고객센터 및 대표자 안내." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Reading Progress -->
+  <div class="reading-progress-container">
+    <div class="reading-progress-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo">
+        <span class="logo-badge">VP</span>
+        <span>VIET PLUS</span>
+        <span class="brand-kr">비엣플러스</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="../" class="nav-link">Trang chủ</a>
+        <a href="../business-info/" class="nav-link active">사업자 정보</a>
+        <a href="../terms/" class="nav-link">이용약관</a>
+        <a href="../privacy-policy/" class="nav-link">개인정보처리방침</a>
+        <a href="../shipping-policy/" class="nav-link">배송정책</a>
+        <a href="../refund-policy/" class="nav-link">교환·환불정책</a>
+        <a href="../support/" class="nav-cta-btn">고객센터</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <a href="../" class="nav-link">Trang chủ (Home)</a>
+    <a href="../business-info/" class="nav-link active">1. 사업자 정보 (Thông tin doanh nghiệp)</a>
+    <a href="../terms/" class="nav-link">2. 이용약관 (Điều khoản sử dụng)</a>
+    <a href="../privacy-policy/" class="nav-link">3. 개인정보 처리방침 (Chính sách bảo mật)</a>
+    <a href="../shipping-policy/" class="nav-link">4. 배송정책 (Chính sách giao hàng)</a>
+    <a href="../refund-policy/" class="nav-link">5. 교환·환불정책 (Chính sách đổi trả)</a>
+    <a href="../support/" class="nav-link">Trung tâm hỗ trợ (Support)</a>
+    <a href="../delete-account/" class="nav-link">Yêu cầu xóa tài khoản (Delete Account)</a>
+  </div>
+
+  <!-- Policy Hero -->
+  <section class="policy-hero">
+    <div class="policy-hero-inner">
+      <div class="breadcrumbs">
+        <a href="../">홈 (Home)</a>
+        <span class="separator">/</span>
+        <span>사업자 정보</span>
+      </div>
+      <h1 class="policy-main-title">
+        사업자 정보
+        <span class="meta-pill">공식 사업자 등록</span>
+      </h1>
+      <p class="policy-subtitle-vn">Thông tin đăng ký doanh nghiệp & Chủ thể kinh doanh ứng dụng Viet Plus</p>
+      <div class="policy-meta-strip">
+        <span class="meta-pill effective-date">시행일: 2026년 7월 14일</span>
+        <span class="meta-pill">서비스명: Viet Plus (비엣플러스)</span>
+        <span class="meta-pill">관할: 대한민국 전자상거래법</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="policy-page-container">
+
+    <!-- Reader Toolbar -->
+    <div class="reader-toolbar">
+      <div class="reader-search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="policySearch" placeholder="Tìm kiếm trong thông tin doanh nghiệp..." />
+      </div>
+      <div class="reader-tools">
+        <button class="tool-btn" id="btnFontDecrease" title="Thu nhỏ chữ">A-</button>
+        <button class="tool-btn" id="btnFontIncrease" title="Phóng to chữ">A+</button>
+        <button class="tool-btn" id="btnPrint" title="In trang">
+          🖨️ In / PDF
+        </button>
+        <button class="tool-btn" id="btnCopyLink" title="Sao chép link">
+          🔗 Chia sẻ
+        </button>
+      </div>
+    </div>
+
+    <!-- TOC Sidebar -->
+    <aside class="policy-sidebar">
+      <div class="toc-header">
+        📑 목차 (Mục lục)
+      </div>
+      <ul class="toc-list">
+        <li class="toc-item active"><a href="#section-1">1. 사업자 정보 (Chủ thể kinh doanh)</a></li>
+        <li class="toc-item"><a href="#section-2">2. 사업장 주소 및 고객센터 (Trụ sở & CSKH)</a></li>
+        <li class="toc-item"><a href="#section-3">3. 서비스 운영 정보 (Thông tin dịch vụ)</a></li>
+        <li class="toc-item"><a href="#section-4">4. 사업 운영 및 고객 보호 정책 (Bảo vệ khách hàng)</a></li>
+      </ul>
+    </aside>
+
+    <!-- Articles Stream -->
+    <div class="policy-articles-stream">
+
+      <!-- Section 1 -->
+      <article class="policy-article-card" id="section-1">
+        <div class="article-header">
+          <span class="article-number">제1항</span>
+          <h2 class="article-title-kr">1. 사업자 정보</h2>
+          <span class="article-title-vn">Thông tin đăng ký kinh doanh</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus 온라인 쇼핑몰을 운영하는 사업자의 공식 등록 정보는 다음과 같습니다.</p>
+          <table class="business-info-table">
+            <tbody>
+              <tr>
+                <th>브랜드명 (Thương hiệu)</th>
+                <td><strong>Viet Plus (비엣플러스)</strong></td>
+              </tr>
+              <tr>
+                <th>상호 (Tên kinh doanh)</th>
+                <td><strong>VIETPLUS</strong></td>
+              </tr>
+              <tr>
+                <th>대표자명 (Đại diện pháp luật)</th>
+                <td><strong>NGUYEN BA TUNG (응우옌바퉁)</strong></td>
+              </tr>
+              <tr>
+                <th>사업자등록번호 (Mã số ĐKKD)</th>
+                <td>
+                  <span>292-06-03928</span>
+                  <button class="copy-badge" data-copy="292-06-03928">Sao chép</button>
+                </td>
+              </tr>
+              <tr>
+                <th>통신판매업 신고번호 (Số phép TMĐT)</th>
+                <td>
+                  <span>2026-광주광산-0777</span>
+                  <button class="copy-badge" data-copy="2026-광주광산-0777">Sao chép</button>
+                </td>
+              </tr>
+              <tr>
+                <th>사업자 유형 (Loại hình kinh doanh)</th>
+                <td>개인사업자 (Hộ kinh doanh cá thể tại Hàn Quốc)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- Section 2 -->
+      <article class="policy-article-card" id="section-2">
+        <div class="article-header">
+          <span class="article-number">제2항</span>
+          <h2 class="article-title-kr">2. 사업장 주소 및 고객센터</h2>
+          <span class="article-title-vn">Trụ sở kinh doanh & Trung tâm chăm sóc khách hàng</span>
+        </div>
+        <div class="article-body">
+          <table class="business-info-table">
+            <tbody>
+              <tr>
+                <th>사업장 주소 (Địa chỉ trụ sở)</th>
+                <td>
+                  <span>전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)</span>
+                  <button class="copy-badge" data-copy="전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)">Sao chép</button>
+                </td>
+              </tr>
+              <tr>
+                <th>고객센터 전화번호 (Hotline)</th>
+                <td>
+                  <a href="tel:01082788511" style="color: var(--blue-700); font-weight: 700;">010-8278-8511</a>
+                  <button class="copy-badge" data-copy="010-8278-8511">Sao chép</button>
+                </td>
+              </tr>
+              <tr>
+                <th>고객센터 이메일 (Email hỗ trợ)</th>
+                <td>
+                  <a href="mailto:ken.master.tto@gmail.com" style="color: var(--blue-700);">ken.master.tto@gmail.com</a>
+                  <button class="copy-badge" data-copy="ken.master.tto@gmail.com">Sao chép</button>
+                </td>
+              </tr>
+              <tr>
+                <th>고객센터 운영시간 (Giờ làm việc)</th>
+                <td>평일 09:00~18:00 (주말 및 공휴일 휴무 / Nghỉ thứ 7, CN và ngày lễ)</td>
+              </tr>
+              <tr>
+                <th>교환 및 반품 주소 (Địa chỉ đổi trả hàng)</th>
+                <td>전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="notice-callout">
+            <div class="notice-callout-title">💡 Lưu ý khi liên hệ hỗ trợ:</div>
+            <p>Khi gửi email hoặc gọi điện hỗ trợ đổi trả/khiếu nại, quý khách vui lòng cung cấp Mã số đơn hàng và Số điện thoại đặt hàng để được hỗ trợ nhanh nhất.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Section 3 -->
+      <article class="policy-article-card" id="section-3">
+        <div class="article-header">
+          <span class="article-number">제3항</span>
+          <h2 class="article-title-kr">3. 서비스 운영 정보</h2>
+          <span class="article-title-vn">Thông tin phương thức vận hành dịch vụ</span>
+        </div>
+        <div class="article-body">
+          <table class="business-info-table">
+            <tbody>
+              <tr>
+                <th>애플리케이션명 (Tên ứng dụng)</th>
+                <td>Viet Plus (Android & iOS)</td>
+              </tr>
+              <tr>
+                <th>서비스 유형 (Hình thức dịch vụ)</th>
+                <td>온라인 상품 소매업 (Bán lẻ sản phẩm trực tuyến)</td>
+              </tr>
+              <tr>
+                <th>서비스 제공 지역 (Phạm vi phục vụ)</th>
+                <td>대한민국 전역 (Toàn lãnh thổ Hàn Quốc)</td>
+              </tr>
+              <tr>
+                <th>판매자 (Đơn vị bán hàng)</th>
+                <td>VIETPLUS</td>
+              </tr>
+              <tr>
+                <th>배송 방법 (Phương thức vận chuyển)</th>
+                <td>국내 택배 배송 (Chuyển phát nhanh bưu điện / chuyển phát nội địa Hàn Quốc)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- Section 4 -->
+      <article class="policy-article-card" id="section-4">
+        <div class="article-header">
+          <span class="article-number">제4항</span>
+          <h2 class="article-title-kr">4. 사업 운영 및 고객 보호 정책</h2>
+          <span class="article-title-vn">Chính sách vận hành kinh doanh & Bảo vệ khách hàng</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 고객이 안전하고 신뢰할 수 있는 쇼핑 서비스를 이용할 수 있도록 상품 정보, 판매 가격, 배송비 및 거래 조건을 명확하고 투명하게 제공합니다.</p>
+          <p>Viet Plus는 직접 판매하는 상품에 대한 책임을 부담하며, 대한민국 관련 법령에 따라 고객 문의, 불만 사항, 교환, 반품 및 환불 요청을 접수하고 신속하고 공정하게 처리합니다.</p>
+          
+          <div class="notice-callout gold">
+            <div class="notice-callout-title">🛡️ Cam kết tuân thủ pháp luật:</div>
+            <p>Mọi giao dịch trên nền tảng Viet Plus tuân thủ nghiêm ngặt Luật Bảo vệ Người tiêu dùng trong Thương mại điện tử Hàn Quốc (전자상거래 등에서의 소비자보호에 관한 법률) và các quy định pháp luật hiện hành.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Mobile Floating TOC Button -->
+  <button class="mobile-toc-fab" aria-label="Toggle Table of Contents">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M4 6h16M4 12h16M4 18h7"/>
+    </svg>
+    Mục lục điều khoản
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-company-info">
+          <h4>VIET PLUS (비엣플러스)</h4>
+          <p><strong>상호 (Tên DN):</strong> VIETPLUS | <strong>대표자 (Đại diện):</strong> NGUYEN BA TUNG</p>
+          <p><strong>사업자등록번호 (Mã số thuế/ĐKKD):</strong> 292-06-03928</p>
+          <p><strong>통신판매업 신고번호 (Phép TMĐT):</strong> 2026-광주광산-0777</p>
+          <p><strong>사업장 주소 (Địa chỉ):</strong> 전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)</p>
+          <p><strong>고객센터 (CSKH):</strong> 010-8278-8511 | <strong>이메일 (Email):</strong> ken.master.tto@gmail.com</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>5 Văn Bản Chính Sách</h4>
+          <ul>
+            <li><a href="../business-info/">1. 사업자 정보 (Thông tin DN)</a></li>
+            <li><a href="../terms/">2. 이용약관 (Điều khoản sử dụng)</a></li>
+            <li><a href="../privacy-policy/">3. 개인정보 처리방침 (Bảo mật)</a></li>
+            <li><a href="../shipping-policy/">4. 배송정책 (Chính sách giao hàng)</a></li>
+            <li><a href="../refund-policy/">5. 교환·환불정책 (Đổi trả hoàn tiền)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hỗ trợ & Quản lý</h4>
+          <ul>
+            <li><a href="../support/">Trung tâm hỗ trợ (Support)</a></li>
+            <li><a href="../delete-account/">Yêu cầu xóa tài khoản</a></li>
+            <li><a href="mailto:ken.master.tto@gmail.com">Gửi thư hỗ trợ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 VIET PLUS. All rights reserved. Registered in South Korea.</p>
+        <p>Hệ sinh thái tiện ích số cho người Việt Nam tại Hàn Quốc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

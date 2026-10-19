@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>배송정책 (Chính sách giao hàng) - Viet Plus</title>
+  <meta name="description" content="Viet Plus 온라인 쇼핑몰 배송정책. 대한민국 전역 배송, 배송 상태 안내, 제주도 및 도서산간 배송비 안내." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Reading Progress -->
+  <div class="reading-progress-container">
+    <div class="reading-progress-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo">
+        <span class="logo-badge">VP</span>
+        <span>VIET PLUS</span>
+        <span class="brand-kr">비엣플러스</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="../" class="nav-link">Trang chủ</a>
+        <a href="../business-info/" class="nav-link">사업자 정보</a>
+        <a href="../terms/" class="nav-link">이용약관</a>
+        <a href="../privacy-policy/" class="nav-link">개인정보처리방침</a>
+        <a href="../shipping-policy/" class="nav-link active">배송정책</a>
+        <a href="../refund-policy/" class="nav-link">교환·환불정책</a>
+        <a href="../support/" class="nav-cta-btn">고객센터</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <a href="../" class="nav-link">Trang chủ (Home)</a>
+    <a href="../business-info/" class="nav-link">1. 사업자 정보 (Thông tin doanh nghiệp)</a>
+    <a href="../terms/" class="nav-link">2. 이용약관 (Điều khoản sử dụng)</a>
+    <a href="../privacy-policy/" class="nav-link">3. 개인정보 처리방침 (Chính sách bảo mật)</a>
+    <a href="../shipping-policy/" class="nav-link active">4. 배송정책 (Chính sách giao hàng)</a>
+    <a href="../refund-policy/" class="nav-link">5. 교환·환불정책 (Chính sách đổi trả)</a>
+    <a href="../support/" class="nav-link">Trung tâm hỗ trợ (Support)</a>
+    <a href="../delete-account/" class="nav-link">Yêu cầu xóa tài khoản (Delete Account)</a>
+  </div>
+
+  <!-- Policy Hero -->
+  <section class="policy-hero">
+    <div class="policy-hero-inner">
+      <div class="breadcrumbs">
+        <a href="../">홈 (Home)</a>
+        <span class="separator">/</span>
+        <span>배송정책</span>
+      </div>
+      <h1 class="policy-main-title">
+        배송정책
+        <span class="meta-pill">국내 배송 안내</span>
+      </h1>
+      <p class="policy-subtitle-vn">Chính sách vận chuyển, biểu phí và thời gian giao nhận hàng hóa tại Hàn Quốc</p>
+      <div class="policy-meta-strip">
+        <span class="meta-pill effective-date">시행일: 2026년 7월 14일</span>
+        <span class="meta-pill">배송 지역: 대한민국 전역</span>
+        <span class="meta-pill">9개 조항 구성</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="policy-page-container">
+
+    <!-- Reader Toolbar -->
+    <div class="reader-toolbar">
+      <div class="reader-search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="policySearch" placeholder="Tìm kiếm trong chính sách giao hàng..." />
+      </div>
+      <div class="reader-tools">
+        <button class="tool-btn" id="btnFontDecrease" title="Thu nhỏ chữ">A-</button>
+        <button class="tool-btn" id="btnFontIncrease" title="Phóng to chữ">A+</button>
+        <button class="tool-btn" id="btnPrint" title="In trang">🖨️ In / PDF</button>
+        <button class="tool-btn" id="btnCopyLink" title="Sao chép link">🔗 Chia sẻ</button>
+      </div>
+    </div>
+
+    <!-- TOC Sidebar -->
+    <aside class="policy-sidebar">
+      <div class="toc-header">
+        📑 목차 (9개 조항)
+      </div>
+      <ul class="toc-list">
+        <li class="toc-item active"><a href="#article-1">제1조 (배송 가능 지역)</a></li>
+        <li class="toc-item"><a href="#article-2">제2조 (배송 기간)</a></li>
+        <li class="toc-item"><a href="#article-3">제3조 (배송비)</a></li>
+        <li class="toc-item"><a href="#article-4">제4조 (주문 처리 및 배송 상태)</a></li>
+        <li class="toc-item"><a href="#article-5">제5조 (상품 수령 및 확인)</a></li>
+        <li class="toc-item"><a href="#article-6">제6조 (배송 실패 및 재배송)</a></li>
+        <li class="toc-item"><a href="#article-7">제7조 (품절 및 배송 불가 상품)</a></li>
+        <li class="toc-item"><a href="#article-8">제8조 (배송 관련 책임)</a></li>
+        <li class="toc-item"><a href="#article-9">제9조 (고객센터 및 문의)</a></li>
+      </ul>
+    </aside>
+
+    <!-- Articles Stream -->
+    <div class="policy-articles-stream">
+
+      <!-- Article 1 -->
+      <article class="policy-article-card" id="article-1">
+        <div class="article-header">
+          <span class="article-number">제1조</span>
+          <h2 class="article-title-kr">배송 가능 지역</h2>
+          <span class="article-title-vn">Khu vực giao hàng hỗ trợ</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 대한민국 내 배송 서비스가 지원되는 지역을 대상으로 상품 배송 서비스를 제공합니다.</p>
+          <p>도서·산간 지역, 제주도 및 기타 배송 제한 지역 등 특별한 배송 조건이 적용되는 지역의 경우 추가 배송비가 발생하거나 배송 기간이 연장될 수 있습니다.</p>
+          <div class="notice-callout">
+            <p>이러한 추가 비용 및 특별 배송 조건은 고객이 결제를 확정하기 전에 명확하게 안내합니다.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="policy-article-card" id="article-2">
+        <div class="article-header">
+          <span class="article-number">제2조</span>
+          <h2 class="article-title-kr">배송 기간</h2>
+          <span class="article-title-vn">Thời gian giao hàng dự kiến</span>
+        </div>
+        <div class="article-body">
+          <p>예상 배송 기간 및 배송 예정일은 상품 상세 페이지, 장바구니 또는 주문 확인 화면을 통해 안내됩니다.</p>
+          <p>실제 배송 기간은 다음과 같은 요인에 따라 달라질 수 있습니다.</p>
+          <ul>
+            <li>배송지 주소</li>
+            <li>상품의 재고 및 준비 상태</li>
+            <li>주문 접수 시점</li>
+            <li>배송 방법 및 택배사</li>
+            <li>공휴일, 기상 상황 및 기타 불가항력적인 사유</li>
+          </ul>
+          <p>배송 예정일에 중대한 변경이 발생하는 경우 Viet Plus는 고객에게 해당 사실을 안내합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="policy-article-card" id="article-3">
+        <div class="article-header">
+          <span class="article-number">제3조</span>
+          <h2 class="article-title-kr">배송비</h2>
+          <span class="article-title-vn">Biểu phí vận chuyển & Cam kết minh bạch</span>
+        </div>
+        <div class="article-body">
+          <p>배송비는 각 주문에 적용되는 배송 기준에 따라 산정됩니다.</p>
+          <p>배송비는 주문 금액, 상품의 무게, 배송 지역 및 진행 중인 할인·무료배송 혜택 등에 따라 달라질 수 있습니다.</p>
+          <p>상품 금액, 배송비 및 최종 결제 금액은 고객이 주문을 확정하기 전에 명확하게 표시됩니다.</p>
+          <div class="notice-callout gold">
+            <div class="notice-callout-title">💰 Cam kết không thu phí ẩn:</div>
+            <p><strong>Viet Plus는 사전에 안내되지 않았거나 고객이 동의하지 않은 추가 비용을 임의로 청구하지 않습니다.</strong></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="policy-article-card" id="article-4">
+        <div class="article-header">
+          <span class="article-number">제4조</span>
+          <h2 class="article-title-kr">주문 처리 및 배송 상태</h2>
+          <span class="article-title-vn">6 trạng thái xử lý đơn hàng & Vận chuyển</span>
+        </div>
+        <div class="article-body">
+          <p>주문은 처리 단계에 따라 다음과 같은 상태로 관리됩니다.</p>
+          <ol>
+            <li><strong>결제 대기:</strong> 주문 접수 후 결제 대기 중</li>
+            <li><strong>결제 완료:</strong> 결제가 정상적으로 완료된 상태</li>
+            <li><strong>상품 준비 중:</strong> 주문 상품을 확인하고 포장 및 출고를 준비하는 단계</li>
+            <li><strong>배송업체 인계 완료:</strong> 상품이 택배사에 인계된 상태</li>
+            <li><strong>배송 중:</strong> 택배사를 통해 상품이 배송되고 있는 상태</li>
+            <li><strong>배송 완료:</strong> 상품 배송이 완료된 상태</li>
+          </ol>
+          <p>필요한 경우 주문 취소, 배송 실패 또는 환불 등의 추가 상태가 표시될 수 있습니다.</p>
+          <p>배송 상태 정보는 Viet Plus가 직접 확인한 정보 또는 실제 배송업체에서 제공하는 데이터를 기준으로 업데이트됩니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="policy-article-card" id="article-5">
+        <div class="article-header">
+          <span class="article-number">제5조</span>
+          <h2 class="article-title-kr">상품 수령 및 확인</h2>
+          <span class="article-title-vn">Nhận hàng & Kiểm tra sản phẩm</span>
+        </div>
+        <div class="article-body">
+          <p>고객은 상품을 수령한 후 상품의 수량, 포장 상태, 상품 종류 및 파손 여부 등 이상 유무를 확인하는 것이 권장됩니다.</p>
+          <p>상품의 파손, 오배송 또는 수량 부족 등의 문제가 발생한 경우 고객은 Viet Plus 고객센터를 통해 지원을 요청할 수 있습니다.</p>
+          <p>상품 수령 즉시 확인하지 않았다는 이유만으로 관계 법령에 따라 보장되는 고객의 정당한 이의 제기 및 권리가 제한되지는 않습니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="policy-article-card" id="article-6">
+        <div class="article-header">
+          <span class="article-number">제6조</span>
+          <h2 class="article-title-kr">배송 실패 및 재배송</h2>
+          <span class="article-title-vn">Giao hàng thất bại & Quy trình phát lại</span>
+        </div>
+        <div class="article-body">
+          <p>배송지 정보의 오류, 수령인과의 연락 불가 또는 기타 객관적인 사유로 인해 배송이 정상적으로 완료되지 않을 수 있습니다.</p>
+          <p>이러한 경우 Viet Plus는 고객 및 배송업체와 협의하여 문제 해결을 지원합니다.</p>
+          <p>재배송비 등 추가 비용이 발생하는 경우에는 실제 발생 원인과 관계 법령에 따라 부담 주체를 결정하며, 모든 책임을 고객에게 일률적으로 부과하지 않습니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 7 -->
+      <article class="policy-article-card" id="article-7">
+        <div class="article-header">
+          <span class="article-number">제7조</span>
+          <h2 class="article-title-kr">품절 및 배송 불가 상품</h2>
+          <span class="article-title-vn">Sản phẩm hết hàng & Không thể cung ứng</span>
+        </div>
+        <div class="article-body">
+          <p>주문한 상품이 품절되었거나 기타 사유로 공급이 불가능한 경우 Viet Plus는 해당 사실을 신속하게 고객에게 안내합니다.</p>
+          <p>고객은 적절한 대체 상품을 선택하거나 주문 취소 및 환불을 요청할 수 있습니다.</p>
+          <div class="notice-callout">
+            <p><strong>Viet Plus는 고객의 사전 동의 없이 주문한 상품을 임의로 다른 상품으로 대체하여 배송하지 않습니다.</strong></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 8 -->
+      <article class="policy-article-card" id="article-8">
+        <div class="article-header">
+          <span class="article-number">제8조</span>
+          <h2 class="article-title-kr">배송 관련 책임</h2>
+          <span class="article-title-vn">Trách nhiệm pháp lý về giao nhận</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 상품 배송 상태의 확인을 지원하고, 판매자의 책임에 해당하는 배송 관련 문제를 관계 법령에 따라 처리합니다.</p>
+          <p>외부 택배사를 이용한다는 이유만으로 상품 매매계약의 이행과 관련된 Viet Plus의 법적 책임이 면제되지는 않습니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 9 -->
+      <article class="policy-article-card" id="article-9">
+        <div class="article-header">
+          <span class="article-number">제9조</span>
+          <h2 class="article-title-kr">고객센터 및 문의</h2>
+          <span class="article-title-vn">Trung tâm hỗ trợ vận chuyển</span>
+        </div>
+        <div class="article-body">
+          <table class="business-info-table">
+            <tbody>
+              <tr>
+                <th>고객센터명</th>
+                <td>Viet Plus 고객센터</td>
+              </tr>
+              <tr>
+                <th>전화번호 (Hotline)</th>
+                <td>010-8278-8511</td>
+              </tr>
+              <tr>
+                <th>이메일 (Email)</th>
+                <td>ken.master.tto@gmail.com</td>
+              </tr>
+              <tr>
+                <th>운영시간 (Giờ làm việc)</th>
+                <td>평일 09:00~18:00 (주말 및 공휴일 휴무)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Mobile Floating TOC Button -->
+  <button class="mobile-toc-fab" aria-label="Toggle Table of Contents">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M4 6h16M4 12h16M4 18h7"/>
+    </svg>
+    Mục lục điều khoản
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-company-info">
+          <h4>VIET PLUS (비엣플러스)</h4>
+          <p><strong>상호 (Tên DN):</strong> VIETPLUS | <strong>대표자 (Đại diện):</strong> NGUYEN BA TUNG</p>
+          <p><strong>사업자등록번호 (Mã số thuế/ĐKKD):</strong> 292-06-03928</p>
+          <p><strong>통신판매업 신고번호 (Phép TMĐT):</strong> 2026-광주광산-0777</p>
+          <p><strong>사업장 주소 (Địa chỉ):</strong> 전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)</p>
+          <p><strong>고객센터 (CSKH):</strong> 010-8278-8511 | <strong>이메일 (Email):</strong> ken.master.tto@gmail.com</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>5 Văn Bản Chính Sách</h4>
+          <ul>
+            <li><a href="../business-info/">1. 사업자 정보 (Thông tin DN)</a></li>
+            <li><a href="../terms/">2. 이용약관 (Điều khoản sử dụng)</a></li>
+            <li><a href="../privacy-policy/">3. 개인정보 처리방침 (Bảo mật)</a></li>
+            <li><a href="../shipping-policy/">4. 배송정책 (Chính sách giao hàng)</a></li>
+            <li><a href="../refund-policy/">5. 교환·환불정책 (Đổi trả hoàn tiền)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hỗ trợ & Quản lý</h4>
+          <ul>
+            <li><a href="../support/">Trung tâm hỗ trợ (Support)</a></li>
+            <li><a href="../delete-account/">Yêu cầu xóa tài khoản</a></li>
+            <li><a href="mailto:ken.master.tto@gmail.com">Gửi thư hỗ trợ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 VIET PLUS. All rights reserved. Registered in South Korea.</p>
+        <p>Hệ sinh thái tiện ích số cho người Việt Nam tại Hàn Quốc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

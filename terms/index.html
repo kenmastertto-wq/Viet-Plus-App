@@ -1,51 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Service – Viet Plus</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1, h2 {
-      color: #111;
-    }
-  </style>
+  <title>이용약관 (Điều khoản sử dụng) - Viet Plus</title>
+  <meta name="description" content="Viet Plus 온라인 쇼핑몰 이용약관. 대한민국 전자상거래법 준수 및 소비자 권익 보호 안내." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 
-  <h1>Terms of Service – Viet Plus</h1>
+  <!-- Reading Progress -->
+  <div class="reading-progress-container">
+    <div class="reading-progress-bar"></div>
+  </div>
 
-  <p>By using Viet Plus, you agree to comply with the following terms and conditions.</p>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo">
+        <span class="logo-badge">VP</span>
+        <span>VIET PLUS</span>
+        <span class="brand-kr">비엣플러스</span>
+      </a>
 
-  <h2>User Conduct</h2>
-  <p>Users are not allowed to post or share:</p>
-  <ul>
-    <li>Offensive, abusive, or harmful content</li>
-    <li>Illegal or fraudulent content</li>
-    <li>Harassment, threats, or hate speech</li>
-  </ul>
+      <nav class="nav-menu">
+        <a href="../" class="nav-link">Trang chủ</a>
+        <a href="../business-info/" class="nav-link">사업자 정보</a>
+        <a href="../terms/" class="nav-link active">이용약관</a>
+        <a href="../privacy-policy/" class="nav-link">개인정보처리방침</a>
+        <a href="../shipping-policy/" class="nav-link">배송정책</a>
+        <a href="../refund-policy/" class="nav-link">교환·환불정책</a>
+        <a href="../support/" class="nav-cta-btn">고객센터</a>
+      </nav>
 
-  <p>
-    Viet Plus has zero tolerance for objectionable content or abusive behavior.
-    We actively monitor, review, and remove violating content within 24 hours.
-    We may suspend or permanently ban accounts that violate these rules.
-  </p>
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
 
-  <h2>Account Responsibility</h2>
-  <p>
-    Users are responsible for maintaining the confidentiality of their accounts
-    and for all activities under their account.
-  </p>
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <a href="../" class="nav-link">Trang chủ (Home)</a>
+    <a href="../business-info/" class="nav-link">1. 사업자 정보 (Thông tin doanh nghiệp)</a>
+    <a href="../terms/" class="nav-link active">2. 이용약관 (Điều khoản sử dụng)</a>
+    <a href="../privacy-policy/" class="nav-link">3. 개인정보 처리방침 (Chính sách bảo mật)</a>
+    <a href="../shipping-policy/" class="nav-link">4. 배송정책 (Chính sách giao hàng)</a>
+    <a href="../refund-policy/" class="nav-link">5. 교환·환불정책 (Chính sách đổi trả)</a>
+    <a href="../support/" class="nav-link">Trung tâm hỗ trợ (Support)</a>
+    <a href="../delete-account/" class="nav-link">Yêu cầu xóa tài khoản (Delete Account)</a>
+  </div>
 
-  <h2>Contact</h2>
-  <p>Email: ken.master.tto@gmail.com</p>
+  <!-- Policy Hero -->
+  <section class="policy-hero">
+    <div class="policy-hero-inner">
+      <div class="breadcrumbs">
+        <a href="../">홈 (Home)</a>
+        <span class="separator">/</span>
+        <span>이용약관</span>
+      </div>
+      <h1 class="policy-main-title">
+        이용약관
+        <span class="meta-pill">온라인 쇼핑몰</span>
+      </h1>
+      <p class="policy-subtitle-vn">Điều khoản và Điều kiện sử dụng dịch vụ nền tảng mua sắm trực tuyến Viet Plus</p>
+      <div class="policy-meta-strip">
+        <span class="meta-pill effective-date">시행일: 2026년 7월 14일</span>
+        <span class="meta-pill">운영: VIETPLUS</span>
+        <span class="meta-pill">12개 조항 구성</span>
+      </div>
+    </div>
+  </section>
 
+  <!-- Main Content Layout -->
+  <main class="policy-page-container">
+
+    <!-- Reader Toolbar -->
+    <div class="reader-toolbar">
+      <div class="reader-search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="policySearch" placeholder="Tìm kiếm trong điều khoản sử dụng..." />
+      </div>
+      <div class="reader-tools">
+        <button class="tool-btn" id="btnFontDecrease" title="Thu nhỏ chữ">A-</button>
+        <button class="tool-btn" id="btnFontIncrease" title="Phóng to chữ">A+</button>
+        <button class="tool-btn" id="btnPrint" title="In trang">🖨️ In / PDF</button>
+        <button class="tool-btn" id="btnCopyLink" title="Sao chép link">🔗 Chia sẻ</button>
+      </div>
+    </div>
+
+    <!-- TOC Sidebar -->
+    <aside class="policy-sidebar">
+      <div class="toc-header">
+        📑 목차 (Danh sách 12 điều)
+      </div>
+      <ul class="toc-list">
+        <li class="toc-item active"><a href="#article-1">제1조 (목적 및 서비스 소개)</a></li>
+        <li class="toc-item"><a href="#article-2">제2조 (적용 범위)</a></li>
+        <li class="toc-item"><a href="#article-3">제3조 (회원 계정 및 고객의 의무)</a></li>
+        <li class="toc-item"><a href="#article-4">제4조 (상품 정보 및 판매 가격)</a></li>
+        <li class="toc-item"><a href="#article-5">제5조 (주문 및 결제)</a></li>
+        <li class="toc-item"><a href="#article-6">제6조 (배송)</a></li>
+        <li class="toc-item"><a href="#article-7">제7조 (주문 취소, 교환, 반품 및 환불)</a></li>
+        <li class="toc-item"><a href="#article-8">제8조 (개인정보 보호)</a></li>
+        <li class="toc-item"><a href="#article-9">제9조 (Viet Plus의 권리와 의무)</a></li>
+        <li class="toc-item"><a href="#article-10">제10조 (분쟁 해결)</a></li>
+        <li class="toc-item"><a href="#article-11">제11조 (약관의 변경)</a></li>
+        <li class="toc-item"><a href="#article-12">제12조 (사업자 정보 및 고객센터)</a></li>
+      </ul>
+    </aside>
+
+    <!-- Articles Stream -->
+    <div class="policy-articles-stream">
+
+      <!-- Article 1 -->
+      <article class="policy-article-card" id="article-1">
+        <div class="article-header">
+          <span class="article-number">제1조</span>
+          <h2 class="article-title-kr">목적 및 서비스 소개</h2>
+          <span class="article-title-vn">Mục đích & Giới thiệu dịch vụ</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 VIETPLUS가 운영하는 대한민국 내 온라인 쇼핑 서비스 플랫폼입니다.</p>
+          <p>Viet Plus 온라인 쇼핑몰은 대한민국 내 고객을 대상으로 식품, 음료, 생활용품 및 기타 소비재를 판매합니다.</p>
+          <p>현재 Viet Plus는 자체적으로 상품을 판매하며, 판매하는 상품에 대한 책임을 직접 부담합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="policy-article-card" id="article-2">
+        <div class="article-header">
+          <span class="article-number">제2조</span>
+          <h2 class="article-title-kr">적용 범위</h2>
+          <span class="article-title-vn">Phạm vi áp dụng</span>
+        </div>
+        <div class="article-body">
+          <p>본 약관은 Viet Plus 온라인 쇼핑몰 서비스를 이용하여 상품을 조회하고, 주문 및 결제하거나 기타 관련 서비스를 이용하는 모든 고객에게 적용됩니다.</p>
+          <p>서비스 이용자는 본 약관 및 대한민국의 관계 법령을 준수해야 합니다.</p>
+          <p>본 약관의 내용이 강행법규에 위반되는 경우에는 해당 법령의 규정이 우선 적용됩니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="policy-article-card" id="article-3">
+        <div class="article-header">
+          <span class="article-number">제3조</span>
+          <h2 class="article-title-kr">회원 계정 및 고객의 의무</h2>
+          <span class="article-title-vn">Tài khoản thành viên & Nghĩa vụ của khách hàng</span>
+        </div>
+        <div class="article-body">
+          <p>고객은 회원가입 또는 상품 주문 시 정확하고 사실에 부합하는 정보를 제공해야 합니다.</p>
+          <p>고객은 본인의 로그인 정보를 안전하게 관리할 책임이 있으며, 계정에 대한 무단 접근 또는 부정 사용을 발견한 경우 즉시 Viet Plus에 알려야 합니다.</p>
+          <p>Viet Plus는 사기 행위 또는 법령 위반 행위가 확인된 경우 관련 법령에 따라 계정 이용을 제한할 수 있으며, 이 과정에서 고객의 정당한 권리와 이익을 보호합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="policy-article-card" id="article-4">
+        <div class="article-header">
+          <span class="article-number">제4조</span>
+          <h2 class="article-title-kr">상품 정보 및 판매 가격</h2>
+          <span class="article-title-vn">Thông tin sản phẩm & Giá bán niêm yết</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 상품명, 상품 이미지, 판매 가격, 규격, 수량 및 기타 필요한 정보를 고객에게 제공합니다.</p>
+          <p>모든 상품 가격은 <strong>대한민국 원화(KRW)</strong>로 표시됩니다.</p>
+          <p>배송비 및 최종 결제 금액은 고객이 주문을 확정하기 전에 명확하게 안내됩니다.</p>
+          <p>상품 정보 및 판매 가격은 변경될 수 있으나, 이미 적법하게 체결된 주문에 대해서는 변경된 조건을 임의로 소급 적용하지 않습니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="policy-article-card" id="article-5">
+        <div class="article-header">
+          <span class="article-number">제5조</span>
+          <h2 class="article-title-kr">주문 및 결제</h2>
+          <span class="article-title-vn">Đặt hàng & Thanh toán</span>
+        </div>
+        <div class="article-body">
+          <p>고객은 상품, 수량, 배송지 및 결제 수단을 선택한 후 주문을 확정합니다.</p>
+          <p>이용 가능한 결제 수단은 Viet Plus가 실제로 제공하고 활성화한 결제 서비스에 따라 달라질 수 있습니다.</p>
+          <p>Viet Plus는 고객의 주문을 정상적으로 접수한 후 주문 확인 정보를 제공합니다.</p>
+          <p>상품 품절 또는 기타 사유로 상품 공급이 불가능한 경우, Viet Plus는 해당 사실을 고객에게 안내하고 관계 법령에 따라 환불 절차를 진행합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="policy-article-card" id="article-6">
+        <div class="article-header">
+          <span class="article-number">제6조</span>
+          <h2 class="article-title-kr">배송</h2>
+          <span class="article-title-vn">Chính sách vận chuyển & Giao nhận</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 애플리케이션에 게시된 배송정책에 따라 상품을 배송합니다.</p>
+          <p>예상 배송일 및 배송비는 고객이 결제를 완료하기 전에 안내됩니다.</p>
+          <p>배송 지연이 발생하는 경우 Viet Plus는 고객에게 해당 사실을 알리고 필요한 지원을 제공하며, 관련 법령에 따라 주문 취소 또는 환불 요청을 처리합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 7 -->
+      <article class="policy-article-card" id="article-7">
+        <div class="article-header">
+          <span class="article-number">제7조</span>
+          <h2 class="article-title-kr">주문 취소, 교환, 반품 및 환불</h2>
+          <span class="article-title-vn">Hủy đơn, Đổi hàng, Trả hàng & Hoàn tiền</span>
+        </div>
+        <div class="article-body">
+          <p>고객은 Viet Plus가 공지한 교환·반품 및 환불정책과 대한민국 관계 법령에 따라 주문 취소, 교환, 반품 또는 환불을 요청할 수 있습니다.</p>
+          <p>상품의 하자, 오배송, 파손 또는 표시·광고 내용과 다른 상품이 배송된 경우에는 관련 소비자 보호 법령에 따라 처리합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 8 -->
+      <article class="policy-article-card" id="article-8">
+        <div class="article-header">
+          <span class="article-number">제8조</span>
+          <h2 class="article-title-kr">개인정보 보호</h2>
+          <span class="article-title-vn">Bảo vệ thông tin cá nhân</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 애플리케이션에 게시된 개인정보 처리방침에 따라 고객의 개인정보를 수집하고 처리합니다.</p>
+          <p>개인정보는 적법한 처리 근거가 있는 목적에 한하여 처리하며, 대한민국의 개인정보 보호 관련 법령을 준수합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 9 -->
+      <article class="policy-article-card" id="article-9">
+        <div class="article-header">
+          <span class="article-number">제9조</span>
+          <h2 class="article-title-kr">Viet Plus의 권리와 의무</h2>
+          <span class="article-title-vn">Quyền & Nghĩa vụ của Viet Plus</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 다음 각 호의 의무를 이행합니다.</p>
+          <ul>
+            <li>상품 정보 및 거래 조건을 명확하고 투명하게 제공합니다.</li>
+            <li>고객의 주문을 처리하고 배송 관련 서비스를 지원합니다.</li>
+            <li>고객의 문의 및 정당한 불만 사항을 접수하고 처리합니다.</li>
+            <li>고객의 개인정보를 안전하게 보호합니다.</li>
+            <li>관련 법령 및 공지된 정책에 따라 교환, 반품 및 환불을 처리합니다.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 10 -->
+      <article class="policy-article-card" id="article-10">
+        <div class="article-header">
+          <span class="article-number">제10조</span>
+          <h2 class="article-title-kr">분쟁 해결</h2>
+          <span class="article-title-vn">Giải quyết tranh chấp</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus와 고객 사이에 발생한 분쟁은 우선 상호 협의와 원만한 의사소통을 통해 해결하도록 노력합니다.</p>
+          <p>협의가 이루어지지 않는 경우, 당사자는 대한민국 관계 법령에 따라 관할 기관 또는 법원에 분쟁 해결을 요청할 수 있습니다.</p>
+          <p>본 약관은 관계 법령에 따라 보장되는 고객의 민원 제기 권리 및 소비자 보호에 관한 권리를 제한하지 않습니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 11 -->
+      <article class="policy-article-card" id="article-11">
+        <div class="article-header">
+          <span class="article-number">제11조</span>
+          <h2 class="article-title-kr">약관의 변경</h2>
+          <span class="article-title-vn">Sửa đổi điều khoản</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 필요한 경우 본 약관을 개정할 수 있으며, 관계 법령에서 정한 절차에 따라 개정 내용과 시행일을 애플리케이션에 공지합니다.</p>
+          <p>약관의 변경으로 인해 고객에게 이미 적법하게 발생한 권리와 이익이 부당하게 침해되지 않도록 합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 12 -->
+      <article class="policy-article-card" id="article-12">
+        <div class="article-header">
+          <span class="article-number">제12조</span>
+          <h2 class="article-title-kr">사업자 정보 및 고객센터</h2>
+          <span class="article-title-vn">Thông tin đơn vị vận hành & CSKH</span>
+        </div>
+        <div class="article-body">
+          <table class="business-info-table">
+            <tbody>
+              <tr>
+                <th>운영 사업자 (Đơn vị vận hành)</th>
+                <td>VIETPLUS</td>
+              </tr>
+              <tr>
+                <th>고객센터 전화번호 (Hotline)</th>
+                <td>010-8278-8511</td>
+              </tr>
+              <tr>
+                <th>고객센터 이메일 (Email)</th>
+                <td>ken.master.tto@gmail.com</td>
+              </tr>
+              <tr>
+                <th>사업장 주소 (Địa chỉ)</th>
+                <td>전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- Legacy Code Preserved (Bảo lưu toàn bộ code/nội dung cũ của terms) -->
+      <div class="legacy-accordion">
+        <div class="legacy-header">
+          <span>📜 English Terms of Service Archive (Phiên bản tiếng Anh lưu trữ trước đây)</span>
+          <span class="legacy-indicator">▶ Xem chi tiết</span>
+        </div>
+        <div class="legacy-content" style="display: none;">
+          <h3>User Conduct</h3>
+          <p>Users are not allowed to post or share:</p>
+          <ul>
+            <li>Offensive, abusive, or harmful content</li>
+            <li>Illegal or fraudulent content</li>
+            <li>Harassment, threats, or hate speech</li>
+          </ul>
+          <p>Viet Plus has zero tolerance for objectionable content or abusive behavior. We actively monitor, review, and remove violating content within 24 hours. We may suspend or permanently ban accounts that violate these rules.</p>
+          <h3 style="margin-top: 1rem;">Account Responsibility</h3>
+          <p>Users are responsible for maintaining the confidentiality of their accounts and for all activities under their account.</p>
+          <p style="margin-top: 0.5rem;">Contact Email: ken.master.tto@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Mobile Floating TOC Button -->
+  <button class="mobile-toc-fab" aria-label="Toggle Table of Contents">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M4 6h16M4 12h16M4 18h7"/>
+    </svg>
+    Mục lục điều khoản
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-company-info">
+          <h4>VIET PLUS (비엣플러스)</h4>
+          <p><strong>상호 (Tên DN):</strong> VIETPLUS | <strong>대표자 (Đại diện):</strong> NGUYEN BA TUNG</p>
+          <p><strong>사업자등록번호 (Mã số thuế/ĐKKD):</strong> 292-06-03928</p>
+          <p><strong>통신판매업 신고번호 (Phép TMĐT):</strong> 2026-광주광산-0777</p>
+          <p><strong>사업장 주소 (Địa chỉ):</strong> 전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)</p>
+          <p><strong>고객센터 (CSKH):</strong> 010-8278-8511 | <strong>이메일 (Email):</strong> ken.master.tto@gmail.com</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>5 Văn Bản Chính Sách</h4>
+          <ul>
+            <li><a href="../business-info/">1. 사업자 정보 (Thông tin DN)</a></li>
+            <li><a href="../terms/">2. 이용약관 (Điều khoản sử dụng)</a></li>
+            <li><a href="../privacy-policy/">3. 개인정보 처리방침 (Bảo mật)</a></li>
+            <li><a href="../shipping-policy/">4. 배송정책 (Chính sách giao hàng)</a></li>
+            <li><a href="../refund-policy/">5. 교환·환불정책 (Đổi trả hoàn tiền)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hỗ trợ & Quản lý</h4>
+          <ul>
+            <li><a href="../support/">Trung tâm hỗ trợ (Support)</a></li>
+            <li><a href="../delete-account/">Yêu cầu xóa tài khoản</a></li>
+            <li><a href="mailto:ken.master.tto@gmail.com">Gửi thư hỗ trợ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 VIET PLUS. All rights reserved. Registered in South Korea.</p>
+        <p>Hệ sinh thái tiện ích số cho người Việt Nam tại Hàn Quốc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

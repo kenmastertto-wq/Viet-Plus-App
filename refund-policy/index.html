@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>교환·반품 및 환불정책 (Chính sách đổi trả & hoàn tiền) - Viet Plus</title>
+  <meta name="description" content="Viet Plus 온라인 쇼핑몰 교환, 반품, 환불 규정. 전자상거래법 준수 7일 이내 청약철회, 환불 처리 기간 안내." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Reading Progress -->
+  <div class="reading-progress-container">
+    <div class="reading-progress-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo">
+        <span class="logo-badge">VP</span>
+        <span>VIET PLUS</span>
+        <span class="brand-kr">비엣플러스</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="../" class="nav-link">Trang chủ</a>
+        <a href="../business-info/" class="nav-link">사업자 정보</a>
+        <a href="../terms/" class="nav-link">이용약관</a>
+        <a href="../privacy-policy/" class="nav-link">개인정보처리방침</a>
+        <a href="../shipping-policy/" class="nav-link">배송정책</a>
+        <a href="../refund-policy/" class="nav-link active">교환·환불정책</a>
+        <a href="../support/" class="nav-cta-btn">고객센터</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <a href="../" class="nav-link">Trang chủ (Home)</a>
+    <a href="../business-info/" class="nav-link">1. 사업자 정보 (Thông tin doanh nghiệp)</a>
+    <a href="../terms/" class="nav-link">2. 이용약관 (Điều khoản sử dụng)</a>
+    <a href="../privacy-policy/" class="nav-link">3. 개인정보 처리방침 (Chính sách bảo mật)</a>
+    <a href="../shipping-policy/" class="nav-link">4. 배송정책 (Chính sách giao hàng)</a>
+    <a href="../refund-policy/" class="nav-link active">5. 교환·환불정책 (Chính sách đổi trả)</a>
+    <a href="../support/" class="nav-link">Trung tâm hỗ trợ (Support)</a>
+    <a href="../delete-account/" class="nav-link">Yêu cầu xóa tài khoản (Delete Account)</a>
+  </div>
+
+  <!-- Policy Hero -->
+  <section class="policy-hero">
+    <div class="policy-hero-inner">
+      <div class="breadcrumbs">
+        <a href="../">홈 (Home)</a>
+        <span class="separator">/</span>
+        <span>교환·반품 및 환불정책</span>
+      </div>
+      <h1 class="policy-main-title">
+        교환·반품 및 환불정책
+        <span class="meta-pill">소비자보호법 준수</span>
+      </h1>
+      <p class="policy-subtitle-vn">Chính sách hủy đơn hàng, đổi hàng, trả hàng và hoàn tiền minh bạch theo luật Hàn Quốc</p>
+      <div class="policy-meta-strip">
+        <span class="meta-pill effective-date">시행일: 2026년 7월 14일</span>
+        <span class="meta-pill">반품 기한: 단순변심 7일 / 하자 3개월</span>
+        <span class="meta-pill">환불 처리: 수령 후 3영업일 이내</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="policy-page-container">
+
+    <!-- Reader Toolbar -->
+    <div class="reader-toolbar">
+      <div class="reader-search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="policySearch" placeholder="Tìm kiếm trong chính sách đổi trả & hoàn tiền..." />
+      </div>
+      <div class="reader-tools">
+        <button class="tool-btn" id="btnFontDecrease" title="Thu nhỏ chữ">A-</button>
+        <button class="tool-btn" id="btnFontIncrease" title="Phóng to chữ">A+</button>
+        <button class="tool-btn" id="btnPrint" title="In trang">🖨️ In / PDF</button>
+        <button class="tool-btn" id="btnCopyLink" title="Sao chép link">🔗 Chia sẻ</button>
+      </div>
+    </div>
+
+    <!-- TOC Sidebar -->
+    <aside class="policy-sidebar">
+      <div class="toc-header">
+        📑 목차 (10개 조항)
+      </div>
+      <ul class="toc-list">
+        <li class="toc-item active"><a href="#article-1">제1조 (기본 원칙)</a></li>
+        <li class="toc-item"><a href="#article-2">제2조 (신청 기간: 7일 / 3개월)</a></li>
+        <li class="toc-item"><a href="#article-3">제3조 (교환·반품 가능 사유)</a></li>
+        <li class="toc-item"><a href="#article-4">제4조 (교환·반품 제한 사유)</a></li>
+        <li class="toc-item"><a href="#article-5">제5조 (반품 배송비 부담)</a></li>
+        <li class="toc-item"><a href="#article-6">제6조 (신청 절차 안내)</a></li>
+        <li class="toc-item"><a href="#article-7">제7조 (환불 절차 및 3영업일)</a></li>
+        <li class="toc-item"><a href="#article-8">제8조 (주문 취소)</a></li>
+        <li class="toc-item"><a href="#article-9">제9조 (변질·파손 식품 관리)</a></li>
+        <li class="toc-item"><a href="#article-10">제10조 (고객센터 & 반품 주소)</a></li>
+      </ul>
+    </aside>
+
+    <!-- Articles Stream -->
+    <div class="policy-articles-stream">
+
+      <!-- Article 1 -->
+      <article class="policy-article-card" id="article-1">
+        <div class="article-header">
+          <span class="article-number">제1조</span>
+          <h2 class="article-title-kr">기본 원칙</h2>
+          <span class="article-title-vn">Nguyên tắc cơ bản</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 대한민국 <strong>「전자상거래 등에서의 소비자보호에 관한 법률」</strong> 및 관련 법령에 따라 고객의 주문 취소, 교환, 반품 및 환불 요청을 처리합니다.</p>
+          <p>모든 요청은 주문의 실제 진행 상태와 관련 법령을 기준으로 공정하고 투명하게 처리합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="policy-article-card" id="article-2">
+        <div class="article-header">
+          <span class="article-number">제2조</span>
+          <h2 class="article-title-kr">반품 및 청약철회 신청 기간</h2>
+          <span class="article-title-vn">Thời hạn yêu cầu đổi trả & Hủy hợp đồng</span>
+        </div>
+        <div class="article-body">
+          <div class="notice-callout gold">
+            <div class="notice-callout-title">⏱️ Thời hạn theo quy định pháp luật Hàn Quốc:</div>
+            <p><strong>1. 단순 변심에 의한 반품 (Đổi ý cá nhân):</strong> 고객은 관계 법령에서 정한 조건 및 예외 사항에 따라 상품을 공급받은 날부터 <strong>7일 이내</strong>에 청약철회 또는 반품을 요청할 수 있습니다.</p>
+            <p style="margin-top: 0.5rem;"><strong>2. 상품의 하자 또는 표시·광고 내용과 다른 경우 (Hàng lỗi, sai mô tả):</strong> 상품이 계약 내용과 다르거나 표시·광고 내용과 다르게 이행된 경우, 고객은 상품을 공급받은 날부터 <strong>3개월 이내</strong>이면서 그 사실을 알았거나 알 수 있었던 날부터 <strong>30일 이내</strong>에 청약철회 등을 요청할 수 있습니다.</p>
+          </div>
+          <p>위 기간은 관계 법령에 따라 적용되며, 법률에서 별도로 보호하는 특별한 경우에는 해당 규정이 우선 적용됩니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="policy-article-card" id="article-3">
+        <div class="article-header">
+          <span class="article-number">제3조</span>
+          <h2 class="article-title-kr">교환 및 반품이 가능한 경우</h2>
+          <span class="article-title-vn">Các trường hợp chấp nhận đổi trả</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 다음과 같은 경우 교환 또는 반품 요청을 접수합니다.</p>
+          <ul>
+            <li>주문한 상품과 다른 상품 또는 규격이 배송된 경우</li>
+            <li>배송된 상품이 파손되거나 하자가 있는 경우</li>
+            <li>주문한 상품의 일부가 누락된 경우</li>
+            <li>상품이 표시·광고 내용 또는 계약상 약정된 내용과 다른 경우</li>
+            <li>고객의 단순 변심에 따른 청약철회가 법정 기간(7일) 내에 이루어지고, 법령상 청약철회 제한 사유에 해당하지 않는 경우</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="policy-article-card" id="article-4">
+        <div class="article-header">
+          <span class="article-number">제4조</span>
+          <h2 class="article-title-kr">교환 및 반품이 제한될 수 있는 경우</h2>
+          <span class="article-title-vn">Các trường hợp giới hạn đổi trả</span>
+        </div>
+        <div class="article-body">
+          <p>관계 법령에 따라 다음과 같은 경우 단순 변심에 의한 청약철회 또는 반품이 제한될 수 있습니다.</p>
+          <ul>
+            <li>고객의 책임 있는 사유로 상품이 멸실 또는 훼손된 경우 (다만, 상품의 내용을 확인하기 위해 포장 등을 훼손한 경우는 제외)</li>
+            <li>고객의 사용 또는 일부 소비로 상품의 가치가 현저히 감소한 경우</li>
+            <li>시간의 경과로 상품의 가치가 현저히 감소하여 재판매가 곤란한 경우</li>
+            <li>그 밖에 관계 법령에서 청약철회 제한을 허용하는 경우</li>
+          </ul>
+          <p>신선식품, 냉동식품 및 유통기한이 짧은 상품의 경우 Viet Plus는 고객이 구매하기 전에 보관 방법, 소비기한 및 법적으로 허용되는 반품 제한 조건을 명확하게 안내합니다.</p>
+          <div class="notice-callout">
+            <p>다만, 이러한 제한 사유는 상품의 하자, 파손, 오배송 또는 계약 내용과 다른 상품에 대해 고객이 법령에 따라 행사할 수 있는 정당한 권리를 제한하지 않습니다.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="policy-article-card" id="article-5">
+        <div class="article-header">
+          <span class="article-number">제5조</span>
+          <h2 class="article-title-kr">반품 배송비 부담</h2>
+          <span class="article-title-vn">Trách nhiệm chi trả phí vận chuyển đổi trả</span>
+        </div>
+        <div class="article-body">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--navy-900);">1. 단순 변심에 의한 반품</h3>
+          <p>고객의 단순 변심으로 청약철회 또는 반품을 요청하는 경우, 관계 법령에 따라 <strong>상품 반환에 필요한 직접적인 배송비는 고객이 부담</strong>합니다.</p>
+          <p>반품 배송비는 고객에게 명확하게 안내하며, Viet Plus는 고객의 정당한 청약철회 권리 행사에 대해 임의의 위약금이나 추가적인 손해배상을 청구하지 않습니다.</p>
+
+          <h3 style="font-size: 1.05rem; margin: 1.25rem 0 0.5rem; color: var(--navy-900);">2. 판매자 귀책사유에 의한 반품</h3>
+          <p>상품의 하자, 오배송 또는 표시·광고 내용과 다른 상품의 배송 등 관계 법령에서 정한 사유에 해당하는 경우, <strong>상품 반환에 필요한 배송비는 Viet Plus가 부담</strong>합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="policy-article-card" id="article-6">
+        <div class="article-header">
+          <span class="article-number">제6조</span>
+          <h2 class="article-title-kr">교환 및 반품 신청 절차</h2>
+          <span class="article-title-vn">Quy trình nộp yêu cầu đổi trả trên ứng dụng</span>
+        </div>
+        <div class="article-body">
+          <p>고객은 다음 절차에 따라 교환, 반품 또는 환불을 요청할 수 있습니다.</p>
+          <ol>
+            <li>Viet Plus 애플리케이션을 실행합니다.</li>
+            <li><strong>'내 주문내역'</strong> 메뉴로 이동합니다.</li>
+            <li>교환 또는 반품을 원하는 주문을 선택합니다.</li>
+            <li><strong>'교환·반품/환불 신청'</strong> 메뉴를 선택합니다.</li>
+            <li>신청 사유를 입력하고 필요한 경우 상품 사진을 첨부합니다.</li>
+            <li>신청서를 제출하면 Viet Plus가 접수하여 처리합니다.</li>
+          </ol>
+          <p>고객은 Viet Plus 고객센터를 통해서도 직접 교환, 반품 또는 환불을 요청할 수 있습니다.</p>
+          <p>사진을 첨부하지 않았다는 이유만으로 고객의 법률상 정당한 청약철회 또는 환불 요청 권리가 자동으로 제한되지는 않습니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 7 -->
+      <article class="policy-article-card" id="article-7">
+        <div class="article-header">
+          <span class="article-number">제7조</span>
+          <h2 class="article-title-kr">환불 절차 및 처리 기간</h2>
+          <span class="article-title-vn">Thời hạn hoàn tiền trong vòng 3 ngày làm việc</span>
+        </div>
+        <div class="article-body">
+          <p>Viet Plus는 고객의 청약철회 또는 주문 취소가 적법하게 이루어진 경우 관계 법령에서 정한 기간 내에 환불을 처리합니다.</p>
+          <div class="notice-callout gold">
+            <div class="notice-callout-title">⚡ Quy chuẩn hoàn tiền 3 ngày làm việc:</div>
+            <p>이미 배송된 상품의 경우, 관계 법령에서 정한 조건에 따라 <strong>반환된 상품을 수령한 날부터 3영업일 이내에 환불</strong>합니다.</p>
+          </div>
+          <p>상품이 아직 공급되지 않은 경우에는 적법한 주문 취소 또는 청약철회 시점을 기준으로 관계 법령에서 정한 환불 기한을 적용합니다.</p>
+          <p>신용카드 또는 전자결제수단으로 결제한 경우, Viet Plus는 해당 결제 서비스 제공업체에 결제 취소 또는 환불을 지체 없이 요청하고 관련 절차를 진행합니다. 실제 환불 금액이 고객의 계좌 또는 결제수단에 반영되는 시점은 은행이나 결제 서비스 제공업체의 처리 일정에 따라 달라질 수 있습니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 8 -->
+      <article class="policy-article-card" id="article-8">
+        <div class="article-header">
+          <span class="article-number">제8조</span>
+          <h2 class="article-title-kr">주문 취소</h2>
+          <span class="article-title-vn">Hủy đơn hàng</span>
+        </div>
+        <div class="article-body">
+          <p>고객은 주문 상세 페이지 또는 Viet Plus 고객센터를 통해 주문 취소를 요청할 수 있습니다.</p>
+          <p>주문 취소는 실제 주문 처리 상태와 관계 법령에 따른 고객의 청약철회 권리를 기준으로 처리합니다.</p>
+          <p>이미 택배사에 인계된 주문이라는 이유만으로 취소 또는 반품 요청이 자동으로 거절되지는 않습니다. Viet Plus는 해당 주문의 배송 상태 및 관련 법령을 고려하여 적절한 취소 또는 반품 절차를 안내합니다.</p>
+        </div>
+      </article>
+
+      <!-- Article 9 -->
+      <article class="policy-article-card" id="article-9">
+        <div class="article-header">
+          <span class="article-number">제9조</span>
+          <h2 class="article-title-kr">변질·파손 또는 품질에 문제가 있는 식품</h2>
+          <span class="article-title-vn">Xử lý thực phẩm bị biến chất, hư hỏng hoặc lỗi chất lượng</span>
+        </div>
+        <div class="article-body">
+          <p>배송된 식품이 변질되었거나 품질 및 안전 기준에 부합하지 않거나 상품 설명과 다른 경우, 고객은 해당 사실을 발견한 후 Viet Plus에 알려 신속한 지원을 받을 수 있습니다.</p>
+          <p>Viet Plus는 상품의 실제 상태와 관련 법령을 확인하여 교환 또는 환불 등 적절한 조치를 진행합니다.</p>
+          <div class="notice-callout">
+            <p><strong>⚠️ Khuyến cáo an toàn thực phẩm:</strong> 식품의 변질이나 안전상 문제가 의심되는 경우 고객은 해당 상품을 섭취하지 않는 것이 권장됩니다.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 10 -->
+      <article class="policy-article-card" id="article-10">
+        <div class="article-header">
+          <span class="article-number">제10조</span>
+          <h2 class="article-title-kr">고객센터 및 반품 주소</h2>
+          <span class="article-title-vn">Thông tin liên hệ CSKH & Địa chỉ gửi hàng hoàn trả</span>
+        </div>
+        <div class="article-body">
+          <table class="business-info-table">
+            <tbody>
+              <tr>
+                <th>고객센터명</th>
+                <td>Viet Plus 고객센터</td>
+              </tr>
+              <tr>
+                <th>전화번호 (Hotline)</th>
+                <td>010-8278-8511</td>
+              </tr>
+              <tr>
+                <th>이메일 (Email)</th>
+                <td>ken.master.tto@gmail.com</td>
+              </tr>
+              <tr>
+                <th>교환 및 반품 주소 (Địa chỉ gửi hàng trả)</th>
+                <td>
+                  <span>전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)</span>
+                  <button class="copy-badge" data-copy="전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)">Sao chép</button>
+                </td>
+              </tr>
+              <tr>
+                <th>운영시간 (Giờ làm việc)</th>
+                <td>평일 09:00~18:00 (주말 및 공휴일 휴무)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>고객은 원활한 교환 및 반품 처리를 위해 상품을 발송하기 전에 고객센터에 연락하여 적절한 반송 방법을 안내받는 것이 권장됩니다.</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Mobile Floating TOC Button -->
+  <button class="mobile-toc-fab" aria-label="Toggle Table of Contents">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M4 6h16M4 12h16M4 18h7"/>
+    </svg>
+    Mục lục điều khoản
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-company-info">
+          <h4>VIET PLUS (비엣플러스)</h4>
+          <p><strong>상호 (Tên DN):</strong> VIETPLUS | <strong>대표자 (Đại diện):</strong> NGUYEN BA TUNG</p>
+          <p><strong>사업자등록번호 (Mã số thuế/ĐKKD):</strong> 292-06-03928</p>
+          <p><strong>통신판매업 신고번호 (Phép TMĐT):</strong> 2026-광주광산-0777</p>
+          <p><strong>사업장 주소 (Địa chỉ):</strong> 전남광주통합특별시 광산구 진곡산단2번로 82-2, 402호(오선동)</p>
+          <p><strong>고객센터 (CSKH):</strong> 010-8278-8511 | <strong>이메일 (Email):</strong> ken.master.tto@gmail.com</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>5 Văn Bản Chính Sách</h4>
+          <ul>
+            <li><a href="../business-info/">1. 사업자 정보 (Thông tin DN)</a></li>
+            <li><a href="../terms/">2. 이용약관 (Điều khoản sử dụng)</a></li>
+            <li><a href="../privacy-policy/">3. 개인정보 처리방침 (Bảo mật)</a></li>
+            <li><a href="../shipping-policy/">4. 배송정책 (Chính sách giao hàng)</a></li>
+            <li><a href="../refund-policy/">5. 교환·환불정책 (Đổi trả hoàn tiền)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hỗ trợ & Quản lý</h4>
+          <ul>
+            <li><a href="../support/">Trung tâm hỗ trợ (Support)</a></li>
+            <li><a href="../delete-account/">Yêu cầu xóa tài khoản</a></li>
+            <li><a href="mailto:ken.master.tto@gmail.com">Gửi thư hỗ trợ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 VIET PLUS. All rights reserved. Registered in South Korea.</p>
+        <p>Hệ sinh thái tiện ích số cho người Việt Nam tại Hàn Quốc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

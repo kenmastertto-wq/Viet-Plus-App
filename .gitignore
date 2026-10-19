@@ -1,0 +1,10 @@
+# Backup and lock files
+*.backup.html
+package-lock.json
+
+# Documentation / Source docx files
+*.docx
+
+# OS files
+.DS_Store
+Thumbs.db
